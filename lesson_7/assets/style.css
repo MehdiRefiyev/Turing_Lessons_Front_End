@@ -1,0 +1,100 @@
+body{
+    margin: 0%;
+    background-color: #F2F2F2;
+}
+.card_area{
+    width: 90%;
+    min-height: 500px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    width: 30%;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-radius: 45px;
+    background-color: #FFFFFF;
+}
+.icon-area{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.img_size{
+    height: 70px;
+    width: 70px;
+}
+.card_h1{
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+}
+.card_p{
+    width: 80%;
+    margin: 0%;
+    margin-bottom: 20px;
+    color: grey;
+    text-align: center;
+    font-size: 16px;
+}
+.p1{margin-bottom: 0%;}
+hr{
+    width: 80%;
+    height: 2px;
+    background-color: #0F66F4;
+    border: none;
+}
+.btn{
+    padding: 15px 44px;
+    background-color: #0F66F4;
+    border-radius: 50px;
+    color: #F2F2F2;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+/*spinner loading animaton css*/
+
+.spinner {
+  color: grey;
+  display: inline-block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+}
+.img_rotate{
+    height: 100%;
+    width: 100%;
+    animation-name: loading;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes loading {
+    0%  {transform: rotate(0deg);}
+    10% {transform: rotate(36deg);}
+    20% {transform: rotate(72deg);}
+    30% {transform: rotate(108deg);}
+    40% {transform: rotate(144deg);}
+    50% {transform: rotate(180deg);}
+    60% {transform: rotate(216deg);}
+    70% {transform: rotate(252deg);}
+    80% {transform: rotate(288deg);}
+    90% {transform: rotate(324deg);}
+    100%{transform: rotate(360deg);}
+
+}

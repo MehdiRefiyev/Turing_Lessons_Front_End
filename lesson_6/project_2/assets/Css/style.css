@@ -1,0 +1,183 @@
+html{background-color: #808080;}
+body{
+    width: 1024px;
+    margin: 0% auto;
+    background-color: white;
+}
+header{
+    height: 200px;
+    width: 98%;
+    margin: 0px 1%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.brand_info{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+.logo_area{
+    width: 150px;
+    height: 100%;
+    display: flex;
+    justify-items: center;
+}
+.logo_a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    width: 90%;
+    height: 80%;
+}
+.main_text{
+    color: grey;
+    font-size: 50px;
+    margin: 0% 10% 0% auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+}
+nav{
+    width: 100%;
+    height: calc(100% - 150px);
+    display: flex;
+    flex-wrap: nowrap;
+}
+nav ul {
+    width: 94%;
+    margin: 0% 3%;
+    padding: 0%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul li a{
+    color: #3A798B;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*main section*/
+main{
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.info_board{
+    width: 96%;
+    height: 120px;
+    margin: 20px 2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(106,161,166,1) 0%, rgba(226,222,223,1) 100%);
+}
+.h1_board{
+    height: 85%;
+    width: 100%;
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #444C4F;
+    font-size: 45px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:lighter;
+    letter-spacing: -4px;
+}
+.dot {
+    height: 14px;
+    width: 14px;
+    background-color: #565455;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 7px;
+}
+.devayder_line{
+    width: 100%;
+    height: 2px;
+    border: none;
+    background-color: #DBDBDB;
+}
+.cards_area{
+    width: 100%;
+    height: fit-content;
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card , .card2 , .card3{
+    min-height: 500px;
+    width: 31%;
+    background-color: #E2E4FB;
+    border-radius: 12px;
+}
+.card2{
+    background-color: #F0D8E6;
+}
+.card3{
+    background-color: #D0C1D8;
+}
+.h2_card{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: -1px;
+    margin-bottom: 40px;
+}
+.p_card{
+    font-size:24px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    color: #4A4267;
+}
+.ul_card1{ 
+    padding: 0px 20px 0px 40px;
+}
+.ul_card1 li{
+    font-size:20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    color: #4A4267;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+.ul_card1 .grey{
+    color: grey;
+}
+.card2_p{
+    margin: 0% 7px 30px 7px;
+    color: #565455;
+}
+.form_place{
+    width: 87%;
+    margin: 0% 10% 15px 3%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 16px;
+    color: #61565c;
+    margin-bottom: 5px;
+}
+.check_place{
+    margin-top: 20px;
+}
+input[type="checkbox"]{
+    margin:0% 25px;
+}
+.check_label{
+    margin-right: auto;
+}

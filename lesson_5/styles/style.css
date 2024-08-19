@@ -1,0 +1,71 @@
+body{
+    margin: 0%;
+}
+.first{
+    width: 50%;
+    padding: 20px;
+    margin: 10px auto;
+    border: 4px dashed #EE7316; /* nece arasina space qoyaq? */
+    background-color: #FFFFDE;
+}
+hr{
+    border: 1px solid grey;
+}
+.second{
+    width: 27%;
+    padding: 15px;
+    margin: 25px auto 25px 3%;
+    background-color: #DEFFFF;
+    border: 10px double black;
+    border-left:none;
+    border-right: none;
+}
+.three{
+    width: 50%;
+    padding: 25px;
+    margin: 25px auto 25px 34%;
+    background-color: #DFB889;
+    border: 10px groove #F8D4BE; /*mellimden 2 dene reng nece verirler sorus */
+}
+/*NESTED CSS*/
+.title_h1{
+    text-align: center;
+    font-size: 35px;
+}
+.pink{
+    width: 90%;
+    height: 70vh;
+    margin: 5vh 5%; 
+    background-color: #FF00FF;
+    border: 10px solid black;
+}
+.stage1 , .stage2 , .stage3{
+    height: 20%;
+    margin: 0%;
+    padding: 30px 4%;
+    box-sizing: border-box;
+}
+.yellow{
+    width: 80%;
+    height: 60%;
+    display: inline-block;
+    margin: 10%;
+    margin-top: 0%;
+    background-color: #FFFF00;
+    border: 10px dotted black;
+}
+.stage2 {
+    height: 30%;
+}
+.skyblue{
+    width: 80%;
+    height: 35%;
+    display: inline-block;
+    margin: 10%;
+    margin-top: 0%;
+    background-color: #00FFFF;
+    border: 10px dashed black;
+}
+.stage3{
+    height: 90%;
+}

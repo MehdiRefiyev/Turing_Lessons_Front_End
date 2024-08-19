@@ -1,0 +1,217 @@
+body{
+    margin: 0%;
+    background-color: #252B42;
+}
+header{
+    width: 76%;
+    height: 75px;
+    display: flex;
+    padding: 0% 12%;
+}
+.logo_place{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    margin-right: 7%;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.logo{
+    text-decoration: none;
+    color: white;
+}
+.logo:hover{
+    color: skyblue;
+}
+.nav_area{
+    width: 35%;
+    height: 100%;
+    display: flex;
+}
+ul{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+ul li {
+    width:20%;
+    margin-right: 5%;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+.btn_area{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.login{
+    margin-right: 2em;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+}
+.login:hover{
+    background-color: blue;
+}
+.join{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 15px 25px;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    background-color: #23A6F0;
+    border: none;
+    border-radius: 5px;
+}
+.material-icons{
+    margin-left: 15px;
+    font-size: 14px !important;
+}
+.join:hover{
+    background-color: blue;
+}
+/*section main text area*/
+.main_text{
+    width: 76%;
+    height: fit-content;
+    display: flex;
+    padding: 0% 12%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.p_welcome{
+    margin: 110px 0px 50px 0px;
+    color: #23A9F4;
+    text-align: center;
+}
+.h_main{
+    max-width: 460px;
+    margin: 0px auto 45px auto;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: 600;
+}
+.p_info_text{
+    max-width: 520px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+.btn_actions{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn_get , .btn_learn{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 15px 25px;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    background-color: #23A6F0;
+    border: none;
+    border-radius: 5px;
+}
+.btn_learn{
+    margin-left: 10px;
+    background-color: transparent;
+    border: 1px solid #23A6F0;
+    color: #23A6F0;
+}
+.btn_get:hover{
+    background-color: blue;
+}
+.btn_learn:hover{
+    background-color: #23A9F4;
+    color: white;
+}
+/*card section */
+.cards_area{
+    width: 76%;
+    height: fit-content;
+    padding: 0% 12%;
+    margin: 120px 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card{
+    min-height: 285px;
+    width: 30%;
+    background-color: white;
+}
+.icon_frame{
+    height: 65px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px auto 25px 10% ;
+    background-color: #FFDCD1;
+    border-radius: 8px;
+}
+.fa-face-meh{
+    font-size: x-large;
+    color: #E6000A;
+}
+.p_card{
+    margin: 10px auto 30px 10%;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: 600;
+}
+.card_line{
+    width: 55px;
+    height: 2px;
+    background-color: #E6000A;
+    margin: 10px auto 10px 10% ;
+    border: none;
+}
+.card_title{
+    margin: 20px 10% 30px 10%;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: 500;
+    color: gray;
+}
+.icf2{
+    background-color: #B9EAA8;
+}
+.icon_check{
+    font-size: 35px !important;
+    color: #56C87D;
+}
+.blue{background-color: #23A6F0;}
+.white{color: white;}
+.clwhite{background-color: white;}
+.icf3{background-color: white;}
+.krcard{
+    font-size: 32px !important;
+    color: #23A6F0;
+}
