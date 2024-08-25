@@ -1,0 +1,63 @@
+:root {  
+    --bg-primary: #232F3E;
+    --bg-secondary: #131A22;
+    --cl-1: #FFFFFF;
+    --cl-2: #DDDDDD;
+    --font-shrift: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --font-size-large: 16px;
+    --font-size-small: 14px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Footer Navbar Section Start  */
+
+#footer-navbar{
+    background-color: var(--bg-primary);
+}
+
+#footer-navbar .container{
+    max-width: 1000px;
+    padding: 48px 0px;
+}
+
+#footer-navbar .links-card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+#footer-navbar .links-card nav{
+    width: 70%;
+    margin-right: auto;
+}
+
+#footer-navbar .links-card h1{
+    color: var(--cl-1);
+    font-family:var(--font-shrift);
+    font-size: var(--font-size-large);
+}
+
+#footer-navbar .links-card ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#footer-navbar .links-card li{
+    margin-bottom: 12px;
+}
+#footer-navbar .links-card li a {
+    text-decoration: none;
+    color: var(--cl-2);
+    font-family: var(--font-shrift);
+    font-weight: 500;
+    font-size: var(--font-size-small);
+}
+
+/* Footer Navbar Section End */
