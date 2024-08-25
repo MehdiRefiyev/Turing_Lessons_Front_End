@@ -1,13 +1,18 @@
-:root {  
+:root {
     --bg-primary: #232F3E;
     --bg-secondary: #131A22;
     --cl-1: #FFFFFF;
     --cl-2: #DDDDDD;
+    --cl-3: silver;
+    --cl-4: black;
     --font-shrift: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --font-shrift-2: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     --font-size-large: 16px;
     --font-size-small: 14px;
+    --font-size-smaller: 12px;
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -15,49 +20,217 @@
 
 /* Footer Navbar Section Start  */
 
-#footer-navbar{
+#footer-navbar {
     background-color: var(--bg-primary);
-}
-
-#footer-navbar .container{
-    max-width: 1000px;
     padding: 48px 0px;
 }
 
-#footer-navbar .links-card{
+#footer-navbar .container {
+    max-width: 1000px;
+}
+
+#footer-navbar .links-card {
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 0 10px;
 }
 
-#footer-navbar .links-card nav{
+#footer-navbar .links-card nav {
     width: 70%;
     margin-right: auto;
 }
 
-#footer-navbar .links-card h1{
+#footer-navbar .links-card h1 {
     color: var(--cl-1);
-    font-family:var(--font-shrift);
+    font-family: var(--font-shrift);
     font-size: var(--font-size-large);
 }
 
-#footer-navbar .links-card ul{
+#footer-navbar .links-card ul {
     list-style: none;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
 }
 
-#footer-navbar .links-card li{
+#footer-navbar .links-card li {
     margin-bottom: 12px;
 }
+
 #footer-navbar .links-card li a {
     text-decoration: none;
     color: var(--cl-2);
-    font-family: var(--font-shrift);
-    font-weight: 500;
+    font-family: var(--font-shrift-2);
+    font-weight: lighter;
     font-size: var(--font-size-small);
 }
 
 /* Footer Navbar Section End */
+
+/* Footer Option Section Start */
+
+#footer-amazon-option {
+    background-color: var(--bg-primary);
+    padding: 10px 0px;
+    border-top: 1px solid grey;
+}
+
+#footer-amazon-option .container {
+    max-width: 1000px;
+    min-height: 90px;
+}
+
+#footer-amazon-option .container .row {
+    justify-content: center;
+    height: 90px;
+    align-content: center;
+}
+
+#footer-amazon-option .footer-logo {
+    width: 80px;
+    display: grid;
+    place-items: center;
+}
+
+#footer-amazon-option .footer-logo img {
+    width: 100%;
+}
+#footer-amazon-option .options-area{
+    display: flex;
+    align-items: center;
+}
+.dropdown-language {
+    min-width: 120px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--cl-3);
+    padding: 6px 8px 6px 8px;
+    border-radius: 4px;
+    max-height: 33px;
+    margin-left: 70px;
+    margin-right: 6px;
+}
+
+.dropbtn {
+    background-color: transparent;
+    font-size: var(--font-size-small);
+    border: none;
+    color: var(--cl-2);
+    margin-left: 6px;
+    margin-right: auto;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    background-color: var(--cl-1);
+    min-width: 120px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: var(--cl-4);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: var(--font-size-small);
+}
+
+
+.dropdown-language:hover .dropdown-content {
+    display: block;
+}
+
+.valute-btn , .vpn{
+    border: 1px solid var(--cl-3);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 6px 18px 6px 8px;
+    margin-right: 6px;
+}
+
+.vpn{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.valute-btn a , .vpn a{
+    text-decoration: none;
+    color: var(--cl-3);
+}
+
+/* Footer Option Section End */
+
+
+/* Footer More On Section Start */
+
+#footer-moreOn-amazon {
+    background-color: var(--bg-secondary);
+    padding: 30px 0px;
+}
+
+#footer-moreOn-amazon .container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#footer-moreOn-amazon .container .row{
+    display: grid;
+    grid-template-columns: repeat(7 , 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 70px;
+    row-gap: 20px;
+}
+
+#footer-moreOn-amazon .row .moreOn-cards a{
+    text-decoration: none;
+    color: var(--cl-3);
+    font-size: var(--font-size-smaller);
+    text-align: justify;
+}
+#footer-moreOn-amazon .row .moreOn-cards a:hover{
+    text-decoration: underline;
+}
+
+.row .moreOn-cards a h1{
+    font-family: var(--font-shrift);
+    font-weight: lighter;
+    color: var(--cl-2);
+    font-size: var(--font-size-smaller);
+}
+
+/* Footer More On Section End */
+
+@media (min-width:768px) and (max-width:992px) {
+    body {
+        min-width: 1000px;
+    }
+    #footer-moreOn-amazon .container .row{
+        padding: 0px 10px;
+    }
+}
+
+@media (min-width:576px) and (max-width:768px) {
+    body {
+        min-width: 1000px;
+    }
+    #footer-moreOn-amazon .container .row{
+        padding: 0px 10px;
+    }
+}
+
+@media (max-width:576px) {
+    body {
+        min-width: 1000px;
+    }
+    #footer-moreOn-amazon .container .row{
+        padding: 0px 10px;
+    }
+}

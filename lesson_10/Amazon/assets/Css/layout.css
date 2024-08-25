@@ -8,6 +8,17 @@
     flex-wrap: wrap;
 }
 
+.centered-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+}
+
 @media (min-width:1200px) {
     .col-xl-1 {
         width: calc(100% / 12 *1);
