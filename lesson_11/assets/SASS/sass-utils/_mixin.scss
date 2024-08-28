@@ -1,0 +1,13 @@
+@mixin title{
+    color: $color-secondary;
+    font-size: $font-size-lg;
+    font-family: $font-primary;
+    font-weight: $font-Wg-700;
+    text-transform: uppercase;
+    padding: 4rem 0;
+}
+
+@mixin active-box{
+    margin-right: 30px;
+    border : solid 8px $color-secondary;
+}
