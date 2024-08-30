@@ -6,11 +6,16 @@ $color-secondary:#307FE2;
 /*Font Family*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-$font-primary:"Lato", sans-serif;
+$font-primary:"Lato-Bold", sans-serif;
+$font-secondery: "Lato-Black" , sans-serif;
 
 /*Font Size*/
 
 $font-size-lg:3rem;
+$font-size-md: 14px;
+$font-size-regular:12px;
+
+$font-size-md-x:20px;
 
 /*Font Weight*/
 
