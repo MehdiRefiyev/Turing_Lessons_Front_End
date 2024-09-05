@@ -1,0 +1,33 @@
+/*Colors*/
+
+$color-primary: #FFFFFF;
+$color-secondary:#FF4A52;
+$color-three: #040E27 ;
+$color-four:#1EC6B6;
+
+/*Font Family*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+$font-primary:"Rubik", sans-serif;
+$font-secondery:"Nothing You Could Do", cursive;
+
+/*Font Size*/
+$font-size-base:2px;
+
+$font-size-lg:150px;
+$font-size-md-x:38px;
+$font-size-md:20px;
+$font-size-regular:16px;
+$font-size-light:14px;
+$font-size-lighter:12px;
+
+/*Font Weight*/
+
+$font-Wg-bold: 700;
+$font-Wg-regular: 500;
+$font-Wg-light: 400;
+
+/*Border Radius*/
+
+$border-radius-primary: 5px;

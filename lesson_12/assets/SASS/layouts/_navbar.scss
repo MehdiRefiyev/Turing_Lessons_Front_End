@@ -1,0 +1,77 @@
+header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: $color-primary;
+    box-sizing: border-box;
+    padding-left: 35px;
+
+    .logo-area{
+        width: 230px;
+    }
+
+    .header-navbar{
+        width: 36.6%;
+        margin-right: auto;
+
+        nav{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            
+
+            ul{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                li{
+                    a{
+                        text-decoration: none;
+                        color: $color-three;
+                        font-family: $font-primary;
+                        font-weight: $font-Wg-light;
+                    }
+                }
+            }
+        }
+    }
+
+    .phone-number{
+        width: 10%;
+        display: flex;
+        gap: 10px;
+    }
+
+
+    .sosial-medias{
+        width: 12%;
+        display: flex;
+
+        nav{
+            width: 100%;
+
+            ul{
+                display: flex;
+                justify-content: space-evenly;
+                border-left: 1px solid silver;
+                align-items: center;
+
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .search-input{
+        width: 80px;
+        height: 100%;
+        background-color: $color-secondary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+}

@@ -1,0 +1,8 @@
+@import "./base/reset";
+@import "./sass-utils/variables";
+// @import "./sass-utils/mixin";
+@import "./sass-utils/layouts";
+
+@import "./layouts/navbar";
+
+@import "./pages/home/slider-area";
