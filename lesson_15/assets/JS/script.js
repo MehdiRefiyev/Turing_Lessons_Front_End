@@ -113,23 +113,52 @@ function mostFrequentUsing(arr) {
 console.log(mostFrequentUsing(words));
 
 console.log("///////////////////////////////////////");
-  
+
+
 // ### Task 7: Chunk an Array into Subarrays
 // Write a function that splits an array into smaller arrays (chunks) of a specified size.
 
 // const arr_2 = [1, 2, 3, 4, 5, 6, 7];
-// const size = 3;
-// const new_arr = [];
-// arr_2.forEach((item) => {
+// const size = 2;
 
-//     new_arr.push(item);
+// const result = [arr_2.splice(0 , size) , arr_2.splice( 0 , size) , arr_2.splice( 0 , size) ];
 
-//     return new_arr;
+// console.log(result);
 
-// });
+const arr_2 = [1, 2, 3, 4, 5, 6, 7];
+const size=2;
+const result=[]
+let last_index=0;
 
-// console.log(new_arr);
+
+for(let i=0;i<arr_2.length/size;i++){
+    result.push(arr_2.slice(last_index , last_index+=size));
+}
+
+console.log(result);     
+
+console.log("///////////////////////////////////////");
+
+// ### Task 5: Array of Objects – Sort by Multiple Properties
+// You have an array of people, and you need to sort them by age in ascending order. If two people have the same age, sort them by name in alphabetical order.
 
 
-// console.log("///////////////////////////////////////");
+let people = [
+    { name: 'Alice', age: 25 },
+    { name: 'Bob', age: 30 },
+    { name: 'Charlie', age: 25 },
+    { name: 'David', age: 30 }
+  ];
 
+console.log(people.sort((a, b) => a.age - b.age));
+
+
+console.log("///////////////////////////////////////");
+
+  
+// ### Task 6: Remove Duplicates from an Array
+// Given an array with duplicate values, write a function to return a new array with only unique values.
+
+const num_s = [1, 2, 2, 3, 4, 4, 5];
+
+console.log([...new Set(num_s)]);
