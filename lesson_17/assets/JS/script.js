@@ -88,3 +88,9 @@ function multiplyBy( x , ...variables){
 }
 
 console.log(multiplyBy(5 , 1,2,3));
+
+
+
+// obj ve class arasindaki ferq 
+
+// constructor nedi?
