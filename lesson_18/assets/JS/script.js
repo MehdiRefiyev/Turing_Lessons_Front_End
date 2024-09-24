@@ -35,11 +35,11 @@ class Library{
             }
         )
 
-        if(result == 'book with the given title is available : true'){
+        if(result.length > 0){
             return result[0].isAvailable;
         }
         else{
-            console.log('book with the given title is available : false');
+            console.log('book with the given title not available');
         }
     }
 
@@ -93,7 +93,7 @@ newLibrary.checkAvailability("The Great Gatsby");
 
 newLibrary.borrowBook("The Great Gatsby");
 
-newLibrary.returnBook("The Great Gatsby")
+newLibrary.returnBook("To Kill a Mockingbird")
 
 console.log(newLibrary.books);
 
