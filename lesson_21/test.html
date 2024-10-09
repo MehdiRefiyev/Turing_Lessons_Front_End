@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p{color: tomato; display: none;
+        background-color: bisque;} */
+    </style>
+</head>
+<body>
+    <p>map sualini tap declaritionlara bax , home work mellim vermiyib </p>
+
+     <!-- <form action="#">
+
+        <input type="text" placeholder="name" id="name">
+
+        <input type="text" placeholder="surname" id="surname">
+
+        <input type="submit" value="submit" id="sub">
+
+        <p>duzqun yazda bu adi veya familiyani</p>
+
+     </form> -->
+
+    <script>
+
+        const myarr = [{a:'1',b:'2'},{a:'2' , b:'3'}];
+
+        const testArray = myarr.map(({a:name , b:surname}) => ({name , surname}) );
+
+        console.log(testArray);
+
+        // let submitBtn = document.querySelector('#sub')
+
+        // let nameIn = document.querySelector("#name")
+
+        // let surnameIn = document.querySelector("#surname")
+        // let parag = document.querySelector("p")
+
+        // submitBtn.addEventListener("click" , () =>{
+
+        //     let text = nameIn.value;
+
+        //     let text2 = surnameIn.value;
+
+        //     if( text.length < 2 || text2.length < 2){
+        //         console.log("err");
+                
+        //         parag.style.display = "flex";
+        //     }
+
+        //     else{
+        //         console.log("tr");
+
+        //         parag.style.display = "none";
+        //         text.value = '';
+        //         text2.value = '';
+
+        //         let myElm = document.createElement("div");	
+
+        //         myElm.innerText = `${text} ${text2}`;	
+                
+        //         document.body.appendChild(myElm);
+
+        //     }
+            
+        // });
+        
+
+    </script>
+
+</body>
+</html>
