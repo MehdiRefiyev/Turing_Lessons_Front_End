@@ -1,18 +1,71 @@
 .bg-card-css {
     background: #EDEDE5;
 }
+
 .cart-wrapper {
-    width: 22% !important;
+    width: 23% !important;
     transition: transform 0.3s ease-in-out !important;
 }
+
 .cart-wrapper.open {
     transform: translateX(0);
 }
 
-.buttons-css{
+.buttons-css {
     position: absolute;
     bottom: 1.5rem;
     width: 84%;
+}
+
+.productInfo {
+    width: 75%;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.productInfo span {
+    font-size: 0.825rem;
+}
+
+.countProduct {
+    display: flex;
+    width: 20%;
+    justify-content: space-evenly;
+    margin-left: 5%;
+}
+
+.productImg {
+    height: 48px;
+    width: 48px;
+}
+
+.nameOfItem {
+    max-width: 50%;
+    text-align: center;
+}
+
+.prev::before {
+    content: " ";
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    display: block;
+}
+
+.next::before {
+    content: " ";
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    display: block;
 }
 
 
@@ -20,7 +73,8 @@
     .cart-wrapper {
         width: 25% !important;
     }
-    #productList{
+
+    #productList {
         width: 72%
     }
 }
@@ -30,7 +84,8 @@
         height: 85vh !important;
         width: 35% !important;
     }
-    #productList{
+
+    #productList {
         width: 62%
     }
 }
@@ -39,7 +94,8 @@
     .cart-wrapper {
         width: 40% !important;
     }
-    #productList{
+
+    #productList {
         width: 57%
     }
 }
@@ -49,15 +105,18 @@
         width: 45% !important;
         transition-property: none !important;
     }
-    #productList{
+
+    #productList {
         width: 52%
     }
 }
+
 @media (max-width: 525px) {
     .cart-wrapper {
         display: none;
     }
-    #productList{
+
+    #productList {
         width: 100%
     }
 }
