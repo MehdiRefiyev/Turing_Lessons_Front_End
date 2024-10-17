@@ -1,0 +1,15 @@
+#nav-Info-Bar{
+    min-height: 100vh;
+    width: $section-w;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 6rem 0;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+@media  (max-width:992px) {
+    #nav-Info-Bar{
+        padding: 0;
+    }
+}

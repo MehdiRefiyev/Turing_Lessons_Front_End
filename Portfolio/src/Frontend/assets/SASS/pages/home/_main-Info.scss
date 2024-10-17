@@ -1,0 +1,14 @@
+#main-Info{
+    height: 500vh;
+    width: calc(100% - $section-w);
+    display: inline-flex;
+    flex-direction: column;
+    padding: 6rem 0;
+    box-sizing: border-box;
+    margin-left: auto;
+}
+@media  (max-width:992px) {
+    #main-Info{
+        padding: 0;
+    }
+}

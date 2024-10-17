@@ -1,0 +1,338 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  scroll-behavior: smooth;
+  background-color: #0F172A;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+body main {
+  width: 100%;
+  height: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 6rem;
+  box-sizing: border-box;
+  display: flex;
+}
+body main section {
+  position: relative;
+  z-index: 2;
+}
+body main::before {
+  --size: 0;
+  content: "";
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(closest-side, rgba(29, 78, 216, 0.15), transparent 80%);
+  transform: translate(-50%, -50%);
+}
+body main:hover::before {
+  --size: 60rem;
+}
+@media (max-width: 992px) {
+  body main:hover::before {
+    --size: 0;
+  }
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media (max-width: 992px) {
+  body main {
+    padding: 5rem 3rem;
+  }
+}
+@media (max-width: 767px) {
+  body main {
+    padding: 3rem 1.5rem;
+  }
+}
+/*Colors*/
+/*Background Colors*/
+/*Font Family*/
+/*Font Size*/
+/*Font Weight*/
+/*Border Radius*/
+/*Auto width*/
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .col-xl-1 {
+    width: 8.3333333333%;
+  }
+  .col-xl-2 {
+    width: 16.6666666667%;
+  }
+  .col-xl-3 {
+    width: 25%;
+  }
+  .col-xl-4 {
+    width: 33.3333333333%;
+  }
+  .col-xl-5 {
+    width: 41.6666666667%;
+  }
+  .col-xl-6 {
+    width: 50%;
+  }
+  .col-xl-7 {
+    width: 58.3333333333%;
+  }
+  .col-xl-8 {
+    width: 66.6666666667%;
+  }
+  .col-xl-9 {
+    width: 75%;
+  }
+  .col-xl-10 {
+    width: 83.3333333333%;
+  }
+  .col-xl-11 {
+    width: 91.6666666667%;
+  }
+  .col-xl-12 {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .col-lg-1 {
+    width: 8.3333333333%;
+  }
+  .col-lg-2 {
+    width: 16.6666666667%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.3333333333%;
+  }
+  .col-lg-5 {
+    width: 41.6666666667%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.3333333333%;
+  }
+  .col-lg-8 {
+    width: 66.6666666667%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
+  .col-lg-10 {
+    width: 83.3333333333%;
+  }
+  .col-lg-11 {
+    width: 91.6666666667%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .col-md-1 {
+    width: 8.3333333333%;
+  }
+  .col-md-2 {
+    width: 16.6666666667%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.3333333333%;
+  }
+  .col-md-5 {
+    width: 41.6666666667%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.3333333333%;
+  }
+  .col-md-8 {
+    width: 66.6666666667%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-10 {
+    width: 83.3333333333%;
+  }
+  .col-md-11 {
+    width: 91.6666666667%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .col-sm-1 {
+    width: 8.3333333333%;
+  }
+  .col-sm-2 {
+    width: 16.6666666667%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33.3333333333%;
+  }
+  .col-sm-5 {
+    width: 41.6666666667%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-7 {
+    width: 58.3333333333%;
+  }
+  .col-sm-8 {
+    width: 66.6666666667%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-10 {
+    width: 83.3333333333%;
+  }
+  .col-sm-11 {
+    width: 91.6666666667%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .col-xs-1 {
+    width: 8.3333333333%;
+  }
+  .col-xs-2 {
+    width: 16.6666666667%;
+  }
+  .col-xs-3 {
+    width: 25%;
+  }
+  .col-xs-4 {
+    width: 33.3333333333%;
+  }
+  .col-xs-5 {
+    width: 41.6666666667%;
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
+  .col-xs-7 {
+    width: 58.3333333333%;
+  }
+  .col-xs-8 {
+    width: 66.6666666667%;
+  }
+  .col-xs-9 {
+    width: 75%;
+  }
+  .col-xs-10 {
+    width: 83.3333333333%;
+  }
+  .col-xs-11 {
+    width: 91.6666666667%;
+  }
+  .col-xs-12 {
+    width: 100%;
+  }
+}
+#nav-Info-Bar {
+  min-height: 100vh;
+  width: 400px;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 6rem 0;
+  box-sizing: border-box;
+  position: fixed;
+}
+
+@media (max-width: 992px) {
+  #nav-Info-Bar {
+    padding: 0;
+  }
+}
+#main-Info {
+  height: 500vh;
+  width: calc(100% - 400px);
+  display: inline-flex;
+  flex-direction: column;
+  padding: 6rem 0;
+  box-sizing: border-box;
+  margin-left: auto;
+}
+
+@media (max-width: 992px) {
+  #main-Info {
+    padding: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
