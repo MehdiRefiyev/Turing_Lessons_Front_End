@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -18,82 +86,97 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	cursor: default;
+}
+
 body {
-	line-height: 1;
 	scroll-behavior: smooth;
 	background-color: #0F172A;
 	min-height: 100vh;
 	overflow-x: hidden;
 
-	main{
-		width: 100%;
-		height: 100%;
+	#light {
+		display: inline-flex;
+		height: 960px;
+		width: 960px;
+		position: absolute;
+		border-radius: 50%;
+		background: radial-gradient(closest-side, rgba(29, 78, 216, 0.15), transparent 80%);
+		transition: transform 0.05s linear;
+	}
+
+	main {
 		max-width: 1280px;
 		margin-left: auto;
-    	margin-right: auto;
+		margin-right: auto;
 		padding: 0 6rem;
 		box-sizing: border-box;
 		display: flex;
 
-		section{
+		section {
 			position: relative;
 			z-index: 2;
 		}
-
-		&::before {
-			--size: 0;
-			content: '';
-			position: absolute;
-			left: var(--x);
-			top: var(--y);
-			width: var(--size);
-			height: var(--size);
-			background: radial-gradient(closest-side,rgba(29, 78, 216, 0.15), transparent 80%);
-			transform: translate(-50%, -50%);
-		}
-		
-		&:hover::before {
-			--size: 60rem;
-		}
-	
-		@media (max-width:992px) {
-			&:hover::before {
-				--size: 0;
-			}
-		}
-
 	}
 }
 
-ol, ul {
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
-@media  (max-width:992px) {
-	body main{
+@media (max-width:992px) {
+	body main {
 		padding: 5rem 3rem;
+	}
+	body #light{
+		display: none;
 	}
 }
 
 @media (max-width:767px) {
-	body main{
+	body main {
 		padding: 3rem 1.5rem;
 	}
 }
