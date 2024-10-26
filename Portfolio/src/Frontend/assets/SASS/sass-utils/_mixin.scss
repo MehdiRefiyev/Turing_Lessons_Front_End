@@ -23,3 +23,9 @@
     border: none;
     padding: 5px 15px;
 }
+
+@mixin link-svg{
+    height: 16px;
+    width: 16px;
+    margin-left: 7px;
+}

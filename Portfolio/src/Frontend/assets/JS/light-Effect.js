@@ -7,14 +7,9 @@ area.addEventListener("mousemove" ,  (e) => {
     if(window.innerWidth > 992){
 
             let x = e.clientX;
-            let y = e.clientY + window.scrollY;
-
-            light.style.transform = `translate(${x - 480}px, ${y - 480}px)`;
+            let y = e.clientY;
             
+            light.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
         }
     }
 );
-
-
-// ikidene bag var birinci scrol dayanmadan coxalir 
-// ikinciside ki scroll herdefe bir az asaqdan basliyir

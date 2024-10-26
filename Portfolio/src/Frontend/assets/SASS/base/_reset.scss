@@ -119,10 +119,9 @@ body {
 	overflow-x: hidden;
 
 	#light {
-		display: inline-flex;
 		height: 960px;
 		width: 960px;
-		position: absolute;
+		position: fixed;
 		border-radius: 50%;
 		background: radial-gradient(closest-side, rgba(29, 78, 216, 0.15), transparent 80%);
 		transition: transform 0.05s linear;

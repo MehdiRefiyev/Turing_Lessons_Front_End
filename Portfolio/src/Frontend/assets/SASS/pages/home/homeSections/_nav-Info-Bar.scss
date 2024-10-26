@@ -1,4 +1,4 @@
-#nav-Info-Bar{
+#nav-Info-Bar {
     height: $section-h;
     width: $section-w;
     display: inline-flex;
@@ -8,36 +8,37 @@
     position: fixed;
 
 
-    .nav-Fixed{
+    .nav-Fixed {
         height: calc($section-h - 192px);
         @include space-between;
 
-        .nav-Header{
+        .nav-Header {
             @include space-between;
             gap: 4rem;
-            
-            .nav-About{
+
+            .nav-About {
                 display: flex;
                 flex-direction: column;
                 flex-wrap: nowrap;
                 gap: 0.55rem;
 
-                h1{
+                h1 {
                     @include big-text;
-                    a{
+
+                    a {
                         text-decoration: none;
                         color: $color-primary;
                     }
                 }
 
-                h2{
+                h2 {
                     font-family: $font-primary;
                     font-size: $font-size-md;
                     color: $color-primary;
                     font-weight: $font-Wt-secondary;
                 }
 
-                p{
+                p {
                     max-width: 320px;
                     font-family: $font-primary;
                     font-size: $font-size-regular;
@@ -48,50 +49,17 @@
 
             }
 
-            .navigations{
-                ul{
+            .navigations {
+                ul {
                     display: flex;
                     flex-direction: column;
                     flex-wrap: nowrap;
                     gap: 1rem;
 
-                    li{
+                    li {
                         display: flex;
                         flex-wrap: nowrap;
                         align-items: center;
-
-                        a{
-                            display: flex;
-                            align-items: center;
-                            text-decoration: none;
-                            font-family: $font-primary;
-                            font-size: 0.835rem;
-                            color: $color-secondary;
-                            font-weight: $font-Wt-primary;
-
-                            &:hover{
-                                color: $color-primary;
-                            }
-
-                            &::before{
-                                content: '';
-                                display: inline-block;
-                                height: 1px;
-                                width: 2rem;
-                                margin-right: 1rem;
-                                background-color: rgb(71, 85, 105);
-                                border: none;
-                            }
-                            &:hover::before{
-                                content: '';
-                                display: inline-block;
-                                height: 1px;
-                                width: 3.6rem;
-                                margin-right: 1rem;
-                                background-color: $color-primary;
-                                border: none;
-                            }
-                        }
                     }
 
                 }
@@ -99,20 +67,20 @@
             }
         }
 
-        .nav-Footer{
-            nav{
-                ul{
+        .nav-Footer {
+            nav {
+                ul {
                     display: flex;
                     align-items: center;
 
-                    li{
+                    li {
                         margin-right: 1.25rem;
 
-                        a{
+                        a {
                             text-decoration: none;
                             display: inline-flex;
 
-                            img{
+                            img {
                                 color: $color-secondary;
                                 width: 25px;
                                 height: 25px;
@@ -125,8 +93,84 @@
     }
 }
 
-@media  (max-width:992px) {
-    #nav-Info-Bar{
+
+.active-Links {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: $font-primary;
+    font-size: 0.835rem;
+    color: $color-primary;
+    font-weight: $font-Wt-primary;
+
+}
+
+.active-span {
+    display: inline-block;
+    height: 1px;
+    width: 3.6rem;
+    margin-right: 1rem;
+    background-color: $color-primary;
+    border: none;
+}
+
+.diactive-Links {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: $font-primary;
+    font-size: 0.835rem;
+    color: $color-secondary;
+    font-weight: $font-Wt-primary;
+}
+
+.diactive-Links:hover {
+    color: $color-primary;
+}
+
+.diactive-span {
+    display: inline-block;
+    height: 1px;
+    width: 2rem;
+    margin-right: 1rem;
+    background-color: rgb(71, 85, 105);
+    border: none;
+}
+.diactive-Links:hover .diactive-span{
+    display: inline-block;
+    height: 1px;
+    width: 3.6rem;
+    margin-right: 1rem;
+    background-color: $color-primary;
+    border: none;
+}
+
+@media (max-width:992px) {
+
+    body main{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    #nav-Info-Bar {
+        height: fit-content;
+        width: 100%;
         padding: 0;
+        position: relative;
+    }
+    #nav-Info-Bar .nav-Fixed{
+        height: fit-content;
+        justify-content: normal;
+        gap: 2rem;
+    }
+    .navigations{
+        display: none;
+    }
+}
+
+@media (max-width:450px) {
+	#nav-Info-Bar .nav-Fixed .nav-Header .nav-About h1{
+        width: 70%;
+        font-size: 36px;
     }
 }
