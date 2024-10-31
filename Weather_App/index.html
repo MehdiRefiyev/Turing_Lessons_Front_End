@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <script src="assets/Js/script.js" defer></script>
     <title>Weather App</title>
 </head>
+
 <body>
     <main>
         <div class="api">
@@ -16,23 +18,38 @@
             <div class="container">
                 <h1 class="heading">Simple Weather App</h1>
                 <form>
-                    <input type="text" placeholder="Search for a city" autofocus>
-                    <button type="submit">SUBMIT</button>
+                    <input type="text" placeholder="Search for a city" id="cityInput">
+                    <button type="button" id="submitBtn">SUBMIT</button>
                     <span class="msg"></span>
                 </form>
             </div>
         </section>
         <section class="result-section">
             <div class="container">
-                <ul class="cities"></ul>
+                <ul class="cities">
+
+                    <!-- <li class="city">
+                        <h2 class="city-name" data-name="">
+                            <span>name</span>
+                            <sup>country</sup>
+                        </h2>
+                        <div class="city-temp">10<sup>°C</sup></div>
+                        <figure>
+                            <img class="city-icon" src="" alt="weather image illustration">
+                            <figcaption>weather description</figcaption>
+                        </figure>
+                    </li> -->
+
+                </ul>
             </div>
         </section>
     </main>
-        
+
     <footer class="page-footer">
         <div class="container">
             <small>Made with by Mehdi Refiyev</small>
         </div>
     </footer>
 </body>
+
 </html>

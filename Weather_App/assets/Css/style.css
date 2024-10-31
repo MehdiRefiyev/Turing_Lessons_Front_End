@@ -168,10 +168,14 @@ body {
 }
 
 .result-section .city-name sup {
+    display: inline-flex;
     padding: 0.2em 0.6em;
     border-radius: 30px;
     color: var(--text_light);
     background: var(--orange);
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
 }
 
 .result-section .city-icon {
@@ -179,7 +183,6 @@ body {
     width: 100px;
     height: 100px;
 }
-
 
 /* FOOTER
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
