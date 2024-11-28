@@ -1,0 +1,35 @@
+.card {
+    display: flex;
+    height: 55px;
+    width: 100%;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.card img {
+    height: 100%;
+    width: 55px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.card p {
+    margin-right: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.like {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.like img {
+    margin-right: 0;
+    height: 22px;
+    width: 22px;
+}
