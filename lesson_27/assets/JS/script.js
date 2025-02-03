@@ -145,5 +145,3 @@ equal.addEventListener('click', () => {
 clear.addEventListener('click', () => {
     display.value = '';
 });
-
-// bitirdikden sora git push elemeyi yaddan cixarma 
